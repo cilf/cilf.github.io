@@ -782,13 +782,16 @@ header p {
   background-color: #FFE788;
 }
 #banner #logo {
+	-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
   position: absolute;
   height: 36px;
   width: 36px;
   right: 7px;
   top: 7px;
   display: block;
-  background: url(../images/octocat-logo.png);
+  background: url(http://www.gravatar.com/avatar/56c40f2f3ec192445c1a1a6ce0081412?s=36);
 }
 
 section {
