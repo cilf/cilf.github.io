@@ -82,7 +82,7 @@ For my bachelor's thesis I created a tool which aims to help with English synony
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            document.writes(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
           <script type="text/javascript">
             try {
@@ -90,6 +90,21 @@ For my bachelor's thesis I created a tool which aims to help with English synony
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+
+<script type="text/javascript">
+var kkeys = [], konami = "38,37,40,39";
+$(document).keydown(function(e) {
+  kkeys.push( e.keyCode );
+  if ( kkeys.toString().indexOf( konami ) >= 0 ){
+    $(document).unbind('keydown',arguments.callee);
+    $.getScript('http://www.cornify.com/js/cornify.js',function(){
+      cornify_add();
+      $(document).keydown(cornify_add);
+    });
+  }
+});
+</script>
+
 
   </body>
 </html>
